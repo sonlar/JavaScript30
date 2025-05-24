@@ -71,6 +71,11 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+    let dict = {}
+    for (item of data) {
+      dict[item] = (dict[item] || 0) + 1
+    }
+    console.table(dict)
 
   </script>
 </body>
